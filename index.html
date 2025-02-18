@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Yasaları ve Psikolojik İlkeler</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: roboto, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            font-size: 18px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .section {
+            background: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li::before {
+            content: "⚡ ";
+            color: #ff9900;
+        }
+        .toc {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .toc.expanded {
+            width: auto;
+            height: auto;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .toc a {
+            display: none;
+            color: #333;
+            text-decoration: none;
+            padding: 5px 10px;
+
+        }
+        .toc.expanded a {
+            display: block;
+        }
+        .toc a.active {
+            font-weight: bold;
+            color: #ff9900;
+        }
+    </style>
+</head>
+<body>
+    <h1>⚡ UX Yasaları ve Psikolojik İlkeler</h1>
+  
+    <div class="toc">☰</div>
+        
+    <div class="section">
+        <h2 id="giris">🎯 Giriş</h2>
+        <p><strong>Kullanıcı Deneyimi (UX) Tasarımı</strong>: Kullanıcıların bir ürün veya hizmetle etkileşimlerinde en iyi deneyimi yaşamalarını sağlamayı amaçlayan disiplin.</p>
+        <p><strong>Psikolojik İlkelerin Önemi</strong>: İnsan davranışlarını ve algılarını anlamak, daha etkili ve kullanıcı dostu tasarımlar oluşturmak için kritik öneme sahiptir.</p>
+    </div>
+    
+    <div class="section">
+        <h2 id="kullanici-tepkisi">⚡ Kullanıcı Tepkisi ve Etkileşim Hızı</h2>
+        <h3>⏩ Doherty Eşiği</h3>
+        <p>Kullanıcı ve sistem arasındaki etkileşim 400ms'den kısa olduğunda verimlilik artar.</p>
+        
+        <h3>⏳ Hick’s Yasası</h3>
+        <p>Seçenek sayısı arttıkça, karar verme süresi uzar.</p>
+    </div>
+    
+    <div class="section">
+        <h2 id="gorsel-algi">👀 Görsel Algı ve Bilgi İşleme</h2>
+        <h3>🎨 Gestalt İlkeleri</h3>
+        <ul>
+            <li>🔍 <b>Yakınlık İlkesi:</b> Birbirine yakın öğeler birlikte algılanır.</li>
+            <li>➿ <b>Süreklilik İlkesi:</b> Bağlanan noktalar en pürüzsüz yolu takip eder.</li>
+            <li>✨ <b>Prägnanz İlkesi:</b> Şekiller en basit formda algılanır.</li>
+            <li>🧩 <b>Benzerlik İlkesi:</b> Benzer özelliklere sahip öğeler birlikte gruplandırılır.</li>
+            <li>🏗 <b>Kapanış İlkesi:</b> Eksik şekiller tamamlanarak algılanır.</li>
+            <li>🔲 <b>Ortak Bölge İlkesi:</b> Aynı sınır içindeki öğeler birlikte algılanır.</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2 id="kullanici-aliskanliklari">📌 Kullanıcı Alışkanlıkları ve Tasarım Standartları</h2>
+        <h3>🔄 Jakob’un Yasası</h3>
+        <p>Kullanıcılar, diğer sitelerde edindikleri deneyimlere dayanarak sizin sitenizin de benzer şekilde çalışmasını beklerler.</p>
+        
+        <h3>✂️ Occam’ın Usturası</h3>
+        <p>Bir problemi çözmek için en basit çözüm genellikle en iyisidir.</p>
+    </div>
+    
+    <div class="section">
+        <h2 id="duygusal-etkileşim">💡 Kullanıcı Deneyimi ve Duygusal Etkileşim</h2>
+        <h3>🎭 Estetik-Kullanılabilirlik Etkisi</h3>
+        <p>Kullanıcılar, estetik olarak hoş görünen tasarımların daha işlevsel olduğunu düşünme eğilimindedir.</p>
+        
+        <h3>🎢 Zirve-Sonu Kuralı</h3>
+        <p>Kullanıcılar, bir deneyimi en yoğun (zirve) ve en son anlarına göre hatırlar.</p>
+    </div>
+    
+    <div class="section">
+        <h2 id="motivasyon">🎯 Kullanıcı Motivasyonu ve Görev Tamamlama</h2>
+        <h3>⏳ Zeigarnik Etkisi</h3>
+        <p>Tamamlanmamış veya kesintiye uğramış görevler daha iyi hatırlanır.</p>
+        
+        <h3>🔦 Von Restorff Etkisi</h3>
+        <p>Benzer öğeler arasında farklı olan daha kolay hatırlanır.</p>
+    </div>
+    
+    <div class="section">
+        <h2 id="sonuc">✅ Sonuç</h2>
+        <p>UX yasaları ve psikolojik ilkeler, kullanıcı odaklı tasarımlar oluşturmak için güçlü bir çerçeve sunar.</p>
+        <p>Kullanıcı deneyimini iyileştirmek için bu ilkeleri bilinçli olarak uygulamak, sezgisel ve etkili arayüzler tasarlamaya yardımcı olur.</p>
+        <p>Tasarım sürecinde bu yasalar arasındaki ilişkileri anlamak, kullanıcı deneyimini optimize etmek için kritik öneme sahiptir.</p>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            var toc = $('.toc');
+
+            // Menüye tıklanınca aç/kapa
+            toc.on('click', function() {
+                $(this).toggleClass('expanded');
+            });
+
+            // Sayfa kaydırıldıkça aktif link belirleme
+            $(window).scroll(function() {
+                var scrollPos = $(document).scrollTop();
+                $('.section').each(function() {
+                    var id = $(this).attr('id');
+                    var sectionOffset = $(this).offset().top - 100;
+
+                    if (scrollPos >= sectionOffset) {
+                        $('.toc a').removeClass('active');
+                        $('.toc a[href="#' + id + '"]').addClass('active');
+                    }
+                });
+            });
+
+            // Menü içine linkleri ekleyelim
+            var menuItems = `
+              <a href="#giris">🎯 Giriş</a>
+              <a href="#kullanici-tepkisi">⚡ Kullanıcı Tepkisi ve Etkileşim Hızı</a>
+              <a href="#gorsel-algi">👀 Görsel Algı ve Bilgi İşleme</a>
+              <a href="#kullanici-aliskanliklari">📌 Kullanıcı Alışkanlıkları ve Tasarım Standartları</a>
+              <a href="#duygusal-etkileşim">💡 Kullanıcı Deneyimi ve Duygusal Etkileşim</a>
+              <a href="#motivasyon">🎯 Kullanıcı Motivasyonu ve Görev Tamamlama</a>
+              <a href="#sonuc">✅ Sonuç</a>
+            `;
+            toc.append(menuItems);
+        });
+    </script>
+</body>
+</html>
